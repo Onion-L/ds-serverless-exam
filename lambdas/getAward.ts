@@ -1,10 +1,7 @@
 import { APIGatewayProxyHandlerV2 } from "aws-lambda";
-import { MovieAward, MovieCast } from "../shared/types";
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import {
   DynamoDBDocumentClient,
-  QueryCommand,
-  QueryCommandInput,
   GetCommand,
 } from "@aws-sdk/lib-dynamodb";
 import Ajv from "ajv";
